@@ -1,0 +1,29 @@
+<md-toolbar class="md-accent">
+  <div class="md-toolbar-tools">
+    <md-button class="md-icon-button">
+      <md-icon>history</md-icon>
+    </md-button>
+    <h2>History</h2>
+    <span flex></span>
+  </div>
+</md-toolbar>
+<md-content  layout-fill md-scroll-y="">
+    <div layout-margin class="md-whiteframe-1dp">
+      <md-list>
+        <md-list-item class="md-3-line" ng-repeat="item in historyList">
+          <img ng-src="{{teams[item.teamId].avatar}}" class="md-avatar" alt="{{teams[item.teamId].name}}">
+          <div class="md-list-item-text">
+            <h3>
+              {{teams[item.teamId].name}}
+            </h3>
+            <h4>
+              {{item.date | date : 'dd.MM.yyyy'}}
+            </h4>
+            <p>
+              {{item.title}}
+            </p>
+          </div>
+        </md-list-item>
+      </md-list>
+    </div>
+</md-content>
