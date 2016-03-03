@@ -18,7 +18,7 @@
   </head>
   <body ng-app="plokerApp" ng-controller="AppCtrl as app">
     <div layout="column" layout-fill>
-        <md-toolbar layout-column class="md-whiteframe-z1 site-content-toolbar">
+        <md-toolbar layout-column class="md-whiteframe-z2 site-content-toolbar">
           <div class="md-toolbar-tools">
             <md-button class="md-icon-button" aria-label="Menu" ng-click="toggleLeft()">
               <md-icon>menu</md-icon>
@@ -35,7 +35,7 @@
             </md-button>
           </div>
         </md-toolbar>
-      <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="sidebar">
+      <md-sidenav class="md-sidenav-left md-whiteframe-z3" md-component-id="sidebar">
         <md-toolbar class="md-theme-light md-accent">
           <h1 class="md-toolbar-tools md-accent">Menu</h1>
         </md-toolbar>
@@ -68,11 +68,12 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="components/app.routes.js"></script>
+        <script src="components/app.config.js"></script>
         <script src="components/app.controller.js"></script>
         <script src="components/about/about.controller.js"></script>
         <script src="components/main/main.controller.js"></script>
         <script src="components/history/history.controller.js"></script>
+        <script src="components/sessions/sessions.controller.js"></script>
         <script src="components/sidebar.controller.js"></script>
         <!-- endbuild -->
 </body>

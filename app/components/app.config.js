@@ -28,8 +28,8 @@ angular
         controllerAs: 'history'
       })
       .when('/sessions/:session?', {
-        templateUrl: 'session/session.html',
-        controller: 'SessionCtrl',
+        templateUrl: 'components/sessions/sessions.view.html',
+        controller: 'SessionsCtrl',
         controllerAs: 'session'
       })
       .otherwise({
@@ -40,4 +40,5 @@ angular
       .primaryPalette('indigo')
       .accentPalette('blue')
       .warnPalette('red')
-  });
+  })
+  .constant("API_URL","127.0.0.1:8080");

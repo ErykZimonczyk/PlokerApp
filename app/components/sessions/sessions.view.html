@@ -1,16 +1,16 @@
 <md-toolbar class="md-accent md-whiteframe-z1">
   <div class="md-toolbar-tools">
     <md-button class="md-icon-button">
-      <md-icon>history</md-icon>
+      <md-icon>view_module</md-icon>
     </md-button>
-    <h2>History</h2>
+    <h2>Sessions</h2>
     <span flex></span>
   </div>
 </md-toolbar>
-<md-content  layout-fill class="content-main">
+<md-content layout-fill class="content-main">
     <div layout-margin class="md-whiteframe-1dp">
-      <md-list class="list-main">
-        <md-list-item class="md-3-line" ng-repeat="item in historyList">
+      <md-list class="main-list">
+        <md-list-item class="md-3-line" ng-repeat="item in sessionsList">
           <img ng-src="{{teams[item.teamId].avatar}}" class="md-avatar" alt="{{teams[item.teamId].name}}">
           <div class="md-list-item-text">
             <h3>
